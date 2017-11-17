@@ -41,8 +41,10 @@ class Question {
 
   // FIXME: Implement async / await
   static async Print(id){
-    const question = await Question.Find(id)
-    return question
+    const question = await Question.Find(id){
+      return question
+    }
+    
     console.log("\n")
     console.log(question.content)
     console.log("\n")

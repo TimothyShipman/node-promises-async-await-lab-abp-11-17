@@ -41,7 +41,9 @@ class Question {
 
   // FIXME: Implement async / await
   static async Print(id){
-    const question = await Question.Find(id)
+    const question = await Question.Find(id){
+      return id
+    }
 
     console.log("\n")
     console.log(question.content)
@@ -49,7 +51,7 @@ class Question {
   }
 }
 
-print()
+
 
 Question._All = [
   new Question("Where in the world is Carmen Sandiego?"),

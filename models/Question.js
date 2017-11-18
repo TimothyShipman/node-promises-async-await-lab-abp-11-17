@@ -49,7 +49,7 @@ class Question {
   }
 }
 
-
+done()
 
 Question._All = [
   new Question("Where in the world is Carmen Sandiego?"),

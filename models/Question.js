@@ -41,7 +41,7 @@ class Question {
 
   // FIXME: Implement async / await
   static async Print(id){
-    const question = await Question.Find(1)
+    const question = await Question.Find(id)
 
     console.log("\n")
     console.log(question.content)
@@ -56,5 +56,7 @@ Question._All = [
   new Question("What's your favorite TV Show?"),
   new Question("What superpower would you want?")
 ]
+
+Question.Print(1)
 
 module.exports = Question
